@@ -14,11 +14,14 @@
     "log4js": "^0.6.29",
     "nedb": "^1.5.1",
     "superagent": "^1.6.1",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "electron app.js",
-    "build": "webpack --progress --color --watch"
+    "build": "webpack --progress --color --watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "antoor <u@uyu.us>",
   "license": "MIT",
@@ -29,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/antoor/antSword/issues"
   },
-  "homepage": "https://github.com/antoor/antSword"
+  "homepage": "https://github.com/antoor/antSword",
+  "snyk": true
 }
