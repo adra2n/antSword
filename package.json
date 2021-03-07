@@ -14,7 +14,7 @@
     "log4js": "^0.6.29",
     "nedb": "^1.5.1",
     "superagent": "^1.6.1",
-    "webpack": "^1.12.14"
+    "webpack": "^2.2.0"
   },
   "scripts": {
     "start": "electron app.js",
